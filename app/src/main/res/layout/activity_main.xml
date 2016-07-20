@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".activity.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/power_btn"
+            android:src="@drawable/power_icon"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:layout_weight="1"
+            />
+
+        <ImageButton
+            android:id="@+id/home_btn"
+            android:src="@drawable/home_icon"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:layout_weight="1"
+            />
+
+        <ImageButton
+            android:id="@+id/back_btn"
+            android:src="@drawable/back_icon"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:layout_weight="1"
+            />
+
+        <ImageButton
+            android:id="@+id/mute_btn"
+            android:src="@drawable/mute_icon"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/arrow_up_btn"
+            android:src="@drawable/arrow_icon"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/arrow_left_btn"
+            android:src="@drawable/arrow_icon"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:layout_weight="1"
+            android:rotation="270"
+            />
+
+        <ImageButton
+            android:id="@+id/enter_btn"
+            android:src="@drawable/circle_icon"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:layout_weight="1"
+            />
+
+        <ImageButton
+            android:id="@+id/arrow_right_btn"
+            android:src="@drawable/arrow_icon"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:layout_weight="1"
+            android:rotation="90"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp">
+
+        <ImageButton
+            android:id="@+id/arrow_down_btn"
+            android:src="@drawable/arrow_icon"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:rotation="180"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/btn_height"
+            android:text="后退" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/btn_height"
+            android:text="播放/暂停" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/btn_height"
+            android:text="停止" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/btn_height"
+            android:text="快进" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <Button
+                android:id="@+id/volume_increment_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="volume+" />
+
+            <Button
+                android:id="@+id/volume_decrement_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Volume-" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
